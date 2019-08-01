@@ -2,6 +2,8 @@
   <require from="./styles.css"></require>
   <require from="./contact-list"></require>
 
+  <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+
   <nav class="navbar navbar-light bg-light fixed-top" role="navigation">
     <a class="navbar-brand" href="#">
       <i class="fa fa-user" aria-hidden="true"></i>
